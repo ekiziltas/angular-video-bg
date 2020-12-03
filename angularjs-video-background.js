@@ -217,7 +217,7 @@
                     });
                     if (!hasContent) {
                         element.css({
-                            position: 'absolute',
+                            position: 'fixed',
                             left: '0',
                             top: '0'
                         });
