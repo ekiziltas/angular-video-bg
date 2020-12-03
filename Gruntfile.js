@@ -33,7 +33,7 @@ module.exports = function (grunt) {
         options: {
             jshintrc: '.jshintrc'
         },
-        src: ['angular-video-bg.js','angular-video-bg-spec.js']
+        src: ['angularjs-video-background.js','angularjs-video-background-spec.js']
       }
     },
     clean: {
@@ -41,24 +41,24 @@ module.exports = function (grunt) {
     },
     strip : {
       main : {
-        src: 'angular-video-bg.js',
-        dest: 'temp/angular-video-bg.js'
+        src: 'angularjs-video-background.js',
+        dest: 'temp/angularjs-video-background.js'
       }
     },
     uglify: {
       main: {
-        src: 'temp/angular-video-bg.js',
-        dest:'angular-video-bg.min.js'
+        src: 'temp/angularjs-video-background.js',
+        dest:'angularjs-video-background.min.js'
       }
     },
     karma: {
       options: {
         frameworks: ['jasmine'],
         files: [  //this files data is also updated in the watch handler, if updated change there too
-            'bower_components/angular/angular.js',
-            'bower_components/angular-mocks/angular-mocks.js',
-            'angular-video-bg.js',
-            'angular-video-bg-spec.js'
+            'node_modules/angular/angular.js',
+            'node_modules/angular-mocks/angular-mocks.js',
+            'angularjs-video-background.js',
+            'angularjs-video-background-spec.js'
         ],
         logLevel:'ERROR',
         reporters:['mocha'],

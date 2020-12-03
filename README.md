@@ -1,10 +1,8 @@
-# angular-video-bg
+# angularjs-video-background
 
-_NOTE: This project is no longer being maintained. I have been working primarily in React lately, and no longer have time to keep up with all of the Angular updates._
+angularjs-video-background is an [Angular.js](http://angularjs.org/) YouTube video background player directive. It stresses simplicity and performance.
 
-angular-video-bg is an [Angular.js](http://angularjs.org/) YouTube video background player directive. It stresses simplicity and performance.
-
-![angular-video-bg Screenshot](https://raw.github.com/kanzelm3/angular-video-bg/master/screenshot.png)
+![angular-video-bg Screenshot](https://raw.github.com/ekiziltas/angular-video-bg/master/screenshot.png)
 
 ## Demo
 
@@ -14,19 +12,19 @@ You can also see a demo of the directive here: [Angular YouTube Video Background
 
 ## Download
 
-* [Latest Version](https://github.com/kanzelm3/angular-video-bg/zipball/master)
+* [Latest Version](https://github.com/ekiziltas/angular-video-bg/zipball/master)
 
 You can also install the package using [Bower](http://bower.io).
 
 ```sh
-bower install angular-video-bg
+yarn add angularjs-video-background
 ```
 
-Or add it to your bower.json file:
+Or add it to your package.json file:
 
 ```javascript
 dependencies: {
-  "angular-video-bg": "~0.3"
+  "angularjs-video-background": "~1.8"
 }
 ```
 
@@ -37,7 +35,7 @@ dependencies: {
 To use the library, include the JS file on your index page, then include the module in your app:
 
 ```javascript
-app = angular.module('myApp', ['angularVideoBg'])
+app = angular.module('myApp', ['angularjsVideoBackground'])
 ```
 
 The directive itself is simply called *video-bg*. The only required attribute is either videoId (which should be a YouTube
@@ -134,17 +132,7 @@ The player object gives you complete access to all of the methods and properties
 
 Tested and working in Chrome, Firefox, Safari, Opera and IE 9+.
 
-## Contributing
-
-Contributions are welcome. Please be sure to document your changes.
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
-
-To get the project running, you'll need [NPM](https://npmjs.org/) and [Bower](http://bower.io/). Run `npm install` and `bower install` to install all dependencies. Then run `grunt serve` in the project directory to watch and compile changes.
+To get the project running, you'll need [NPM](https://npmjs.org/) and [Yarn](https://yarnpkg.com/). Run `npm install` or `yarn install` to install all dependencies. Then run `grunt serve` in the project directory to watch and compile changes.
 
 If you create new unit test, you can run `grunt test` to execute all of the unit tests. Try to write tests if you contribute.
 

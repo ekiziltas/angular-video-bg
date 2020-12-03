@@ -3,22 +3,22 @@
 
     /**
      * @ngdoc overview
-     * @name angularVideoBg
+     * @name angularjsVideoBackground
      * @description This module contains a directive that allows you easily make a YouTube video play as the background of
      * any container on your site.
      */
 
-    angular.module('angularVideoBg', []);
+    angular.module('angularjsVideoBackground', []);
 
     /**
      * @ngdoc directive
-     * @name angularVideoBg.directive:videoBg
+     * @name angularjsVideoBackground.directive:videoBg
      * @description This directive makes it super simple to turn the background of any element on your site into a YouTube
      * video. All you need is the video id! You can place content within the directive and it will be transcluded over top
      * of the video background.
      * @element <video-bg video-id="videoId" ratio="ratio" loop="loop" mute="mute" start="start" content-z-index="contentZIndex" allow-click-events="allowClickEvents"></video-bg>
      */
-    angular.module('angularVideoBg').directive('videoBg', videoBg);
+    angular.module('angularjsVideoBackground').directive('videoBg', videoBg);
 
     // this obviates using ngAnnotate in the build task
     videoBg.$inject = ['$window', '$q', '$timeout'];
@@ -124,7 +124,7 @@
                 /**
                  * @ngdoc method
                  * @name getPropertyAllSides
-                 * @methodOf angularVideoBg.directive:videoBg
+                 * @methodOf angularjsVideoBackground.directive:videoBg
                  * @description This method takes a property such as margin and returns the computed styles for all four
                  * sides of the parent container.
                  * @param {string} property - the css property to get
@@ -146,7 +146,7 @@
                 /**
                  * @ngdoc method
                  * @name calculateParentDimensions
-                 * @methodOf angularVideoBg.directive:videoBg
+                 * @methodOf angularjsVideoBackground.directive:videoBg
                  * @description This method takes the dimensions (width and height) of the parent, as well as the "spacers"
                  * (simply all of the margin, padding and border values) and adds the margin, padding and border values to
                  * the dimensions in order to get back the outer dimensions of the parent.
@@ -236,7 +236,7 @@
                 /**
                  * @ngdoc method
                  * @name getParentDimensions
-                 * @methodOf angularVideoBg.directive:videoBg
+                 * @methodOf angularjsVideoBackground.directive:videoBg
                  * @description This method utilizes the getPropertyAllSides and calculateParentDimensions in order to get
                  * the parent container dimensions and return them.
                  * @returns {{width: number, height: number}}
@@ -262,7 +262,7 @@
                 /**
                  * @ngdoc method
                  * @name getPlayerDimensions
-                 * @methodOf angularVideoBg.directive:videoBg
+                 * @methodOf angularjsVideoBackground.directive:videoBg
                  * @description This method uses the aspect ratio of the video and the height/width of the parent container
                  * in order to calculate the width and height of the video player.
                  * @returns {{width: number, height: number}}
